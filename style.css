@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box;
+	transition: 300ms opacity;
+	user-select: none;
+}
+body{
+	font-family: Inter, sans-serif;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction: column;
+	min-height: 100vh;
+	gap:1rem;
+	font-weight: 800;
+	font-size:48px;
+	background-color: lightpink;
+	color: white;
+	overflow:hidden;
+}
+
+div.emoji-container{
+	text-align:center;
+}
+div.emoji-face{
+	font-size:64px;
+}
+div.button-container{
+	display:flex;
+	flex-direction: row;
+	gap:0.5rem;
+}
+p.question{
+text-align:center;
+}
+button{
+	border:0px solid;
+	padding:0.5rem;
+	border-radius:0.5rem;
+	font-family: inherit;
+	font-size: 24px;
+	font-weight: 800; 
+	color: deeppink;
+	background:white;
+	border: 0.15rem solid;
+	cursor:pointer;
+}
+.js-negative-button{
+transition:all 200ms;}
+.no-button{
+	color: black;
+	cursor: not-allowed;
+}
+div.invisible{
+	opacity:0;
+	pointer-events: none;
+}
+.js-address-label{
+font-size:12px;}
