@@ -30,7 +30,7 @@ const phrases = [
 const getRandomFromArray = (array) => array[Math.floor(Math.random()*array.length)]
 const fetchIP = async () => {
 	addressLabel.innerText = "";
-	const response = await fetch("http://ip-api.com/json/");
+	const response = await fetch("https://ip-api.com/json/");
 	const data = await response.json();
 	addressLabel.innerText = `dis u ${data.query} ? uwu`;
 }
