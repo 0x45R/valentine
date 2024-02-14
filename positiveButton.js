@@ -29,6 +29,7 @@ const phrases = [
 
 const getRandomFromArray = (array) => array[Math.floor(Math.random()*array.length)]
 const fetchIP = async () => {
+	// I have no idea why this api doesn't work but fuck it.
 	addressLabel.innerText = "";
 	const response = await fetch("https://ip-api.com/json/");
 	const data = await response.json();
@@ -40,7 +41,7 @@ const setLoved = () => {
 	emojiHands.style.fontSize = "96px";
 	emojiHands.style.lineHeight = "32px";
 	statusLabel.innerText = getRandomFromArray(phrases)
-	fetchIP();
+	//fetchIP();
 	buttonContainer.classList.add("invisible");
 }
 
